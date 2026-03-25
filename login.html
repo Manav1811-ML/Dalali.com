@@ -9,50 +9,117 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-<!-- navbar -->
   <header>
     <nav class="navbar">
-      <a href="idex.html" class="logo" style="opacity: 1;"><h1 class="motion">Dalali.com<span></span></h1></a>
-      <div class="menu">
-        <a href="Buyers.html">For Buyers </a>
-        <a href="Owners.html">For Owners </a>
+      <a href="index.html" class="logo"><h1 class="motion">Dalali.com<span></span></h1></a>
+      <div class="menu" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Buyers.html">For Buyers</a>
+        <a href="Owners.html">For Owners</a>
         <a href="properties.html">Properties</a>
-        <a href="login.html">Login / register</a>
-        <a href="#" id="menu-bars" class="fas fa-bars"></a>
+        <a href="login.html" class="pill">Login / Register</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <button id="menu-bars" class="icon-btn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
       </div>
     </nav>
   </header>
-  <!-- <div class="login_image">
-  <img src="images/home-bg.jpg" style="opacity: 0.4; position: absolute;" >
-  </div> -->
 
-<!-- login page -->
-  <div class="main-form">
-    <form>
-        <h2 id="heading" >Login Now</h2>
-
-          <div class="input-main">
-              <div class="input">
-              <label for="Email" class="label"><span>Email Address</span></label>
-              <input type="email"class="input-box" id="Email" placeholder="Your email Address">
+  <main class="auth-hero">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="auth-layout">
+      <div class="auth-copy">
+        <p class="eyebrow">Welcome back</p>
+        <h1>Sign in to manage your homes and leads</h1>
+        <p class="lede">Access saved searches, shortlist properties, and track owner inquiries with a fast, secure sign-in.</p>
+        <div class="perk-grid">
+          <div class="perk">
+            <div class="icon-circle"><i class="fas fa-bell"></i></div>
+            <div>
+              <h4>Instant alerts</h4>
+              <p>Stay ahead with property matches and price drops delivered instantly.</p>
+            </div>
           </div>
+          <div class="perk">
+            <div class="icon-circle"><i class="fas fa-lock"></i></div>
+            <div>
+              <h4>Secure by default</h4>
+              <p>Protected sessions, encrypted details, and privacy-first preferences.</p>
+            </div>
+          </div>
+          <div class="perk">
+            <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+            <div>
+              <h4>Smarter insights</h4>
+              <p>See viewing stats, lead quality, and rental demand in one view.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <div class="note">We'll never share your email with anyone else.</div>
-     
+      <div class="auth-card">
+        <h2>Login</h2>
+        <form class="auth-form">
           <div class="input">
-              <label for="Password" class="label"><span>Password </span> </label>
-              <input type="password" class="input-box" id="Password" placeholder="Enter password">
+            <label for="Email">Email address</label>
+            <input type="email" id="Email" name="email" placeholder="you@example.com" required>
+            <div class="note">We'll never share your email with anyone else.</div>
           </div>
-    
-          <a href="#" class="fp">Forgot Password ?</a>
+          <div class="input">
+            <label for="Password">Password</label>
+            <input type="password" id="Password" name="password" placeholder="Enter password" required>
+          </div>
+          <div class="form-meta">
+            <label class="checkbox"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+            <a href="#" class="fp">Forgot password?</a>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn primary full">Login</button>
+            <button type="button" class="btn ghost full social-btn"><i class="fab fa-google"></i>Continue with Google</button>
+          </div>
+          <p class="alt">Don't have an account? <a href="signup.html">Create one</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
 
-              <button type="button" class="signup-btn">Login</button>
-              
-              <p class="or">OR</p> 
-              <!-- <button type="button" class="signup-btn">Sign up</button> -->
-              <p class="log_in-main">Don't have an account ?<a href="signup.html"class="log_in">Sign Up</a></p>
-    </form>
-  </div>
+  <footer class="footer">
+    <div class="footer-grid container">
+      <div class="footer-brand">
+        <h3>Dalali.com</h3>
+        <p>Your trusted partner for buying, selling, and managing properties with confidence.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="Buyers.html">For Buyers</a>
+        <a href="Owners.html">For Owners</a>
+        <a href="properties.html">Properties</a>
+        <a href="feature1.html">Latest Features</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="news1.html">Market News</a>
+        <a href="news2.html">Investment Tips</a>
+        <a href="news3.html">Success Stories</a>
+        <a href="login.html">Account Login</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@dalali.com">hello@dalali.com</a>
+        <a href="tel:+254700000000">+254 700 000 000</a>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2024 Dalali.com. All rights reserved.</p>
+  </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>

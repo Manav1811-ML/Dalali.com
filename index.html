@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dalali Rentals | Modern homes to love</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo"><h1 class="motion">Dalali.com<span></span></h1></a>
+        <div class="menu" id="nav-links">
+          <a href="#hero">Home</a>
+          <a href="Buyers.html">For Buyers</a>
+          <a href="Owners.html">For Owners</a>
+          <a href="properties.html">Properties</a>
+          <a href="login.html" class="pill">Login / Register</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+          <button id="menu-bars" class="icon-btn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Rent · Buy · Invest</p>
+        <h1>Find a home you’ll love living in</h1>
+        <p class="lede">Premium rentals and curated properties with transparent pricing, verified listings, and local neighborhood intel.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="properties.html">Browse properties</a>
+          <a class="btn ghost" href="Owners.html">List a property</a>
+        </div>
+        <div class="hero-meta">
+          <span class="pill subtle">0% hidden fees</span>
+          <span class="pill subtle">24/7 support</span>
+          <span class="pill subtle">Move-in ready options</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="glass">
+          <img src="images/Skyline.jpg" alt="Modern apartment" class="hero-img">
+          <div class="card-content">
+            <p class="label">Featured</p>
+            <h3>Skyline Residences</h3>
+            <p class="muted">2 BHK · Downtown · Fully furnished</p>
+            <div class="price-row">
+              <span class="price">₹48,000 /mo</span>
+              <span class="pill subtle">Available now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="search">
+    <div class="container">
+      <form class="search-bar">
+        <div class="field">
+          <label>Location</label>
+          <input type="text" placeholder="e.g. Mumbai, Pune, Delhi" aria-label="Location">
+        </div>
+        <div class="field">
+          <label>Property type</label>
+          <select aria-label="Property type">
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Studio</option>
+            <option>Co-living</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Budget (per month)</label>
+          <input type="text" placeholder="₹30,000 - ₹60,000" aria-label="Budget">
+        </div>
+        <button type="submit" class="btn primary full">Search homes</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="filters-listings" id="listings">
+    <div class="container filters-grid">
+      <aside class="filters">
+        <div class="filters-head">
+          <p class="eyebrow">Filters</p>
+          <button class="link" id="reset-filters" type="button">Reset</button>
+        </div>
+        <div class="filter-block">
+          <label>Price range</label>
+          <input type="range" min="10000" max="150000" value="60000" class="range">
+          <div class="range-labels"><span>₹10k</span><span>₹1.5L+</span></div>
+        </div>
+        <div class="filter-block">
+          <label>Property type</label>
+          <div class="chips">
+            <button class="chip active" type="button">Apartment</button>
+            <button class="chip" type="button">Villa</button>
+            <button class="chip" type="button">Studio</button>
+            <button class="chip" type="button">Co-living</button>
+          </div>
+        </div>
+        <div class="filter-block">
+          <label>Location</label>
+          <select>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Bengaluru</option>
+            <option>Delhi NCR</option>
+          </select>
+        </div>
+        <div class="filter-block">
+          <label>Move-in date</label>
+          <input type="date">
+        </div>
+        <button class="btn primary full" type="button">Apply filters</button>
+      </aside>
+
+      <div class="listing-area">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Browse</p>
+            <h2>Homes that feel like you</h2>
+            <p class="muted">Curated rentals with verified photos, transparent pricing, and flexible terms.</p>
+          </div>
+          <div class="pill subtle">24 results</div>
+        </div>
+
+        <div class="card-grid listing-grid">
+          <article class="property-card" data-title="Skyline Residences" data-location="Powai, Mumbai" data-price="₹48,000 /mo" data-rating="4.9" data-amenities="Balcony, Parking, Furnished" data-img="images/img-1.jpg">
+            <div class="card-media" style="background-image: url('images/img-1.jpg');"></div>
+            <div class="card-body">
+              <div class="pill subtle">2 BHK · Furnished</div>
+              <h3>Skyline Residences</h3>
+              <p class="muted">Powai, Mumbai · Lake-facing · Balcony</p>
+              <div class="price-row">
+                <span class="price">₹48,000 /mo</span>
+                <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+              </div>
+              <button class="btn ghost full open-modal">View details</button>
+            </div>
+          </article>
+          <article class="property-card" data-title="Arbour Grove" data-location="Koregaon Park, Pune" data-price="₹68,000 /mo" data-rating="4.8" data-amenities="Club access, Parking, Semi-furnished" data-img="images/img-2.jpg">
+            <div class="card-media" style="background-image: url('images/img-2.jpg');"></div>
+            <div class="card-body">
+              <div class="pill subtle">3 BHK · Semi-furnished</div>
+              <h3>Arbour Grove</h3>
+              <p class="muted">Koregaon Park, Pune · Green views</p>
+              <div class="price-row">
+                <span class="price">₹68,000 /mo</span>
+                <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+              </div>
+              <button class="btn ghost full open-modal">View details</button>
+            </div>
+          </article>
+          <article class="property-card" data-title="Urban Nest" data-location="Indiranagar, Bengaluru" data-price="₹32,000 /mo" data-rating="4.7" data-amenities="Pet friendly, Furnished, WiFi" data-img="images/img-3.jpg">
+            <div class="card-media" style="background-image: url('images/img-3.jpg');"></div>
+            <div class="card-body">
+              <div class="pill subtle">Studio · Fully furnished</div>
+              <h3>Urban Nest</h3>
+              <p class="muted">Indiranagar, Bengaluru · Walk to cafes</p>
+              <div class="price-row">
+                <span class="price">₹32,000 /mo</span>
+                <div class="rating"><i class="fas fa-star"></i> 4.7</div>
+              </div>
+              <button class="btn ghost full open-modal">View details</button>
+            </div>
+          </article>
+          <article class="property-card" data-title="Seaside Haven" data-location="Versova, Mumbai" data-price="₹74,000 /mo" data-rating="4.9" data-amenities="Sea view, Pool, Concierge" data-img="images/img-4.jpg">
+            <div class="card-media" style="background-image: url('images/img-4.jpg');"></div>
+            <div class="card-body">
+              <div class="pill subtle">2 BHK · Furnished</div>
+              <h3>Seaside Haven</h3>
+              <p class="muted">Versova, Mumbai · Sea-facing</p>
+              <div class="price-row">
+                <span class="price">₹74,000 /mo</span>
+                <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+              </div>
+              <button class="btn ghost full open-modal">View details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <p class="value">2,500+</p>
+        <p class="muted">Verified listings</p>
+      </div>
+      <div class="stat">
+        <p class="value">98%</p>
+        <p class="muted">On-time move-ins</p>
+      </div>
+      <div class="stat">
+        <p class="value">24/7</p>
+        <p class="muted">Concierge support</p>
+      </div>
+      <div class="stat">
+        <p class="value">15+</p>
+        <p class="muted">Cities covered</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container section-head">
+      <div>
+        <p class="eyebrow">Handpicked</p>
+        <h2>Featured rentals</h2>
+        <p class="muted">Design-forward homes with great light, smart layouts, and ready-to-move condition.</p>
+      </div>
+      <a class="link" href="properties.html">View all properties</a>
+    </div>
+    <div class="container card-grid">
+      <article class="property-card">
+        <div class="card-media" style="background-image: url('images/img-1.jpg');"></div>
+        <div class="card-body">
+          <div class="pill subtle">2 BHK · Furnished</div>
+          <h3>Lakeview Heights</h3>
+          <p class="muted">Powai, Mumbai · 1,150 sq.ft · Balcony + Parking</p>
+          <div class="price-row">
+            <span class="price">₹52,000 /mo</span>
+            <a class="link" href="feature1.html">View details</a>
+          </div>
+        </div>
+      </article>
+      <article class="property-card">
+        <div class="card-media" style="background-image: url('images/img-2.jpg');"></div>
+        <div class="card-body">
+          <div class="pill subtle">3 BHK · Semi-furnished</div>
+          <h3>Arbour Grove</h3>
+          <p class="muted">Koregaon Park, Pune · 1,450 sq.ft · Club access</p>
+          <div class="price-row">
+            <span class="price">₹68,000 /mo</span>
+            <a class="link" href="properties.html">View details</a>
+          </div>
+        </div>
+      </article>
+      <article class="property-card">
+        <div class="card-media" style="background-image: url('images/img-3.jpg');"></div>
+        <div class="card-body">
+          <div class="pill subtle">Studio · Fully furnished</div>
+          <h3>Urban Nest</h3>
+          <p class="muted">Indiranagar, Bengaluru · 520 sq.ft · Pet friendly</p>
+          <div class="price-row">
+            <span class="price">₹32,000 /mo</span>
+            <a class="link" href="properties.html">View details</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="container trust-grid">
+      <div>
+        <p class="eyebrow">Why Dalali</p>
+        <h2>Designed for renters first</h2>
+        <p class="muted">Transparent pricing, verified homes, flexible terms, and guided support from search to move-in.</p>
+      </div>
+          <div class="pillars">
+            <div class="pillar">
+              <div class="icon-circle pulse"><i class="fas fa-shield-halved"></i></div>
+          <h4>Verified listings</h4>
+          <p class="muted">Every home is photographed, mapped, and checked for documents.</p>
+        </div>
+            <div class="pillar">
+              <div class="icon-circle pulse"><i class="fas fa-key"></i></div>
+          <h4>Move-in ready</h4>
+          <p class="muted">Furnished options with maintenance handled for you.</p>
+        </div>
+            <div class="pillar">
+              <div class="icon-circle pulse"><i class="fas fa-headset"></i></div>
+          <h4>Concierge help</h4>
+          <p class="muted">Local advisors to schedule visits, negotiate, and close faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section news-updates" id="news">
+    <div class="container section-head">
+      <div>
+        <p class="eyebrow">News & updates</p>
+        <h2>Market moves and buyer intel</h2>
+        <p class="muted">Stay ahead with fresh launches, pricing cues, and investing takeaways curated by our advisors.</p>
+      </div>
+      <a class="link" href="news1.html">View all updates</a>
+    </div>
+
+    <div class="container card-grid news-grid">
+      <article class="news-card">
+        <div class="card-media" style="background-image:url('images/news.jpg');"></div>
+        <div class="card-body">
+          <div class="news-meta eyebrow">Market insight</div>
+          <h3>Godrej Emerald Thane West: What buyers should know</h3>
+          <p class="muted">Key highlights, pricing signals, and expectations for this launch.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="news1.html">Read update</a>
+            <a class="btn ghost" href="Buyers.html">Talk to an advisor</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-media" style="background-image:url('images/news1.jpg');"></div>
+        <div class="card-body">
+          <div class="news-meta eyebrow">Market update</div>
+          <h3>Diya Green City: Should you buy now or wait?</h3>
+          <p class="muted">Payment stages, appreciation potential, and video walkthrough highlights.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="news2.html">Read update</a>
+            <a class="btn ghost" href="Buyers.html">Get guidance</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-media" style="background-image:url('images/news2.jpg');"></div>
+        <div class="card-body">
+          <div class="news-meta eyebrow">Success story</div>
+          <h3>Sell closer to asking: Presentation that works</h3>
+          <p class="muted">Pricing discipline, media quality, and how to attract serious buyers.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="news3.html">Read update</a>
+            <a class="btn ghost" href="Owners.html">List with Dalali</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-card">
+      <div>
+        <p class="eyebrow">Ready to move?</p>
+        <h2>Let’s find your next address.</h2>
+        <p class="muted">Tell us your needs and a local advisor will send curated options within 24 hours.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn primary" href="Buyers.html">Talk to an advisor</a>
+        <a class="btn ghost" href="Owners.html">List my property</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Dalali.com</h3>
+        <p>Modern rentals with verified listings, transparent pricing, and concierge support across major cities.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#listings">Featured homes</a>
+        <a href="properties.html">All properties</a>
+        <a href="Owners.html">List your home</a>
+        <a href="Buyers.html">Talk to an advisor</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="login.html">Account & bookings</a>
+        <a href="signup.html">Create account</a>
+        <a href="news1.html">Market news</a>
+        <a href="news2.html">Investment tips</a>
+      </div>
+      <div>
+        <h4>Stay updated</h4>
+        <form class="footer-form">
+          <label class="muted" for="newsletter">Get curated rentals and city guides.</label>
+          <div class="footer-input">
+            <input type="email" id="newsletter" placeholder="you@example.com" aria-label="Email">
+            <button type="submit" class="btn primary">Subscribe</button>
+          </div>
+          <p class="muted">No spam. Just smart home picks.</p>
+        </form>
+      </div>
+    </div>
+    <p class="container footer-bottom">© 2024 Dalali.com. All rights reserved.</p>
+  </footer>
+
+  <section class="modal" id="property-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="icon-btn close" id="close-modal" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-body">
+        <p class="eyebrow" id="modal-location"></p>
+        <h3 id="modal-title"></h3>
+        <p class="muted" id="modal-amenities"></p>
+        <div class="price-row">
+          <span class="price" id="modal-price"></span>
+          <div class="rating" id="modal-rating"></div>
+        </div>
+        <p class="muted">Thoughtfully designed spaces with natural light, modern kitchens, and proximity to transit. Schedule a tour and move in faster.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="login.html">Book now</a>
+          <a class="btn ghost" href="Buyers.html">Talk to an advisor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="main.js"></script>
+</body>
+</html>
